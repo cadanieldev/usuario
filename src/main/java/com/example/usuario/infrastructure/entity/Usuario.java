@@ -1,10 +1,7 @@
 package com.example.usuario.infrastructure.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.jspecify.annotations.Nullable;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -19,6 +16,7 @@ import java.util.List;
 //Criar uma tabela com entity
 @Entity
 @Table(name = "usuario") // table para definir o nome da tabela, se nao colocar ele coloca random
+@Builder
 public class Usuario implements UserDetails { // implements validar usuario como login e senha
     //Criar o identificado
     @Id

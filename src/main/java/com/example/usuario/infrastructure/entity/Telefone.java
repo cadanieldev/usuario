@@ -1,10 +1,7 @@
 package com.example.usuario.infrastructure.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Getter // Metodo get
 @Setter // Metodo set
@@ -13,7 +10,7 @@ import lombok.Setter;
 //Criar uma tabela com entity
 @Entity
 @Table(name = "telefone") // table para definir o nome da tabela, se nao colocar ele coloca random
-
+@Builder
 public class Telefone {
 
     @Id
