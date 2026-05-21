@@ -1,6 +1,7 @@
 package com.example.usuario.infrastructure.repository;
 
 
+
 import com.example.usuario.infrastructure.entity.Usuario;
 import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.JpaRepository;
