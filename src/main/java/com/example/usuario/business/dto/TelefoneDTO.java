@@ -10,6 +10,7 @@ import lombok.*;
 @Builder
 public class TelefoneDTO {
 
+    private Long id; // incluir id no DTO telefone e endereco
     private String numero;
     private String ddd;
 }
